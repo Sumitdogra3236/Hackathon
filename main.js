@@ -1,9 +1,8 @@
-/*
-Project to know about your surrounding locations, Universities, Hospitals, Railway Stations, Malls and Shopping Centers, Airports
-*/
-const location = "Nirwna Greens 4 , Nirwana, Mohali";
-const puppeteer = require("puppeteer");
+// Program to know about your surrounding locations, Universities, Hospitals, Railway Stations, Malls and Shopping Centers, Airports
+
 const {gettabledetails, getdist}=require("./driver");
+const puppeteer = require("puppeteer");
+const location = "Nirwna Greens 4 , Nirwana, Mohali";
 let detailsOF = ["Chandigarh University", "Hotels", "Hospitals ", "Shopping Centers", "Restaurants", "Bus stand", "PVR",];
 (async function () {
     try {
