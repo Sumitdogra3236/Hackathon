@@ -2,8 +2,8 @@
 
 const {gettabledetails, getdist}=require("./driver");
 const puppeteer = require("puppeteer");
-const location = " Nirwna Greens 4, Mohali";
-let detailsOF = [" Chandigarh University", "Airport", " Hotels", "Hospitals ", "Shopping Centers", "Restaurants", "Bus stand", "PVR",];
+const location = " Chandigarh University";
+let detailsOF = [ "Airport", " Hotels", "Hospitals ", " Shopping Mall", "Restaurants", "Bus stand", "PVR",];
 (async function () {
     try {
 
@@ -34,7 +34,13 @@ let detailsOF = [" Chandigarh University", "Airport", " Hotels", "Hospitals ", "
          Distance from your location to Railway Station is ${dist2}
         `);
 
-        let dist3 = await getdist(tab, " Shopping Malls");
+        let dist3 = await getdist(tab, " Max Hospital, Mohali ");
+
+        console.log(`
+         Distance from your location to Shopping Malls is ${dist2}
+        `);
+
+        let dist4 = await getdist(tab, " VR Punjab Mall");
 
         console.log(`
          Distance from your location to Shopping Malls is ${dist2}
